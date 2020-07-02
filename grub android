@@ -1,0 +1,5 @@
+menuentry "Android-x86 7.1-r2" {
+search --set=root --file /android-x86 7.1-r2/kernel
+linux /android-x86 7.1-r2/kernel quiet root=/dev/ram0 androidboot.selinux=permissive
+initrd /android-x86 7.1-r2/initrd.img
+}
